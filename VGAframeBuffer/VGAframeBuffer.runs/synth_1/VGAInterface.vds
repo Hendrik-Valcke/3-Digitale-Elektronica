@@ -1,0 +1,287 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Oct  6 15:39:09 2020
+# Process ID: 436
+# Current directory: D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.runs/synth_1
+# Command line: vivado.exe -log VGAInterface.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGAInterface.tcl
+# Log file: D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.runs/synth_1/VGAInterface.vds
+# Journal file: D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source VGAInterface.tcl -notrace
+Command: synth_design -top VGAInterface -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11436
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1039.750 ; gain = 3.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VGAInterface' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd:19]
+WARNING: [Synth 8-5640] Port 'clk100mhz' is missing in component declaration [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd:43]
+INFO: [Synth 8-3491] module 'ClockingWizard' declared at 'D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.runs/synth_1/.Xil/Vivado-436-LAPTOP-7KFHSKA6/realtime/ClockingWizard_stub.vhdl:5' bound to instance 'clockmap' of component 'ClockingWizard' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'ClockingWizard' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.runs/synth_1/.Xil/Vivado-436-LAPTOP-7KFHSKA6/realtime/ClockingWizard_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'VGATiming' declared at 'D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGATiming.vhd:6' bound to instance 'verticalTimings' of component 'VGATiming' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'VGATiming' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGATiming.vhd:16]
+INFO: [Synth 8-3491] module 'VGAHorizontalTiming' declared at 'D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/new/VGAHorizontalTiming.vhd:8' bound to instance 'horizontalTimings' of component 'VGAHorizontalTiming' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGATiming.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'VGAHorizontalTiming' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/new/VGAHorizontalTiming.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'VGAHorizontalTiming' (1#1) [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/new/VGAHorizontalTiming.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'VGATiming' (2#1) [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGATiming.vhd:16]
+INFO: [Synth 8-3491] module 'VideoMemory' declared at 'D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.runs/synth_1/.Xil/Vivado-436-LAPTOP-7KFHSKA6/realtime/VideoMemory_stub.vhdl:5' bound to instance 'vidMemory' of component 'VideoMemory' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'VideoMemory' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.runs/synth_1/.Xil/Vivado-436-LAPTOP-7KFHSKA6/realtime/VideoMemory_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'VGAInterface' (3#1) [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1092.656 ; gain = 56.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1092.656 ; gain = 56.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1092.656 ; gain = 56.125
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1092.656 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc] for cell 'clockmap'
+WARNING: [Vivado 12-584] No ports matched ''. [d:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [d:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [d:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc:6]
+Finished Parsing XDC File [d:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc] for cell 'clockmap'
+Parsing XDC File [d:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/ip/VideoMemory/VideoMemory/VideoMemory_in_context.xdc] for cell 'vidMemory'
+Finished Parsing XDC File [d:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/ip/VideoMemory/VideoMemory/VideoMemory_in_context.xdc] for cell 'vidMemory'
+Parsing XDC File [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/imports/ConfigVoltages.xdc]
+Finished Parsing XDC File [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/imports/ConfigVoltages.xdc]
+Parsing XDC File [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CA'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'CB'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'CC'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'CD'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'CE'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'CF'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'CG'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'AUD_PWM'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:181]
+WARNING: [Vivado 12-584] No ports matched 'AUD_SD'. [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc:182]
+Finished Parsing XDC File [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/VGAInterface_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/constrs_1/imports/new/pongConstraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGAInterface_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGAInterface_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1195.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1195.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1195.957 ; gain = 159.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1195.957 ; gain = 159.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for Clk100MHz. (constraint file  d:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk100MHz. (constraint file  d:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/ip/ClockingWizard/ClockingWizard/ClockingWizard_in_context.xdc, line 8).
+Applied set_property DONT_TOUCH = true for clockmap. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vidMemory. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1195.957 ; gain = 159.426
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Red_reg' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd:113]
+WARNING: [Synth 8-327] inferring latch for variable 'Green_reg' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd:117]
+WARNING: [Synth 8-327] inferring latch for variable 'Blue_reg' [D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd:121]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1195.957 ; gain = 159.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP addrb0, operation Mode is: C'+A2*(B:0x280).
+DSP Report: register verticalTimings/horizontalTimings/pixelCounter_reg is absorbed into DSP addrb0.
+DSP Report: register verticalTimings/horizontalTimings/pixelCounter_reg is absorbed into DSP addrb0.
+DSP Report: operator addrb0 is absorbed into DSP addrb0.
+DSP Report: operator addrb1 is absorbed into DSP addrb0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1195.957 ; gain = 159.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++-------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|VGAInterface | C'+A2*(B:0x280) | 10     | 10     | 10     | -      | 19     | 1    | 0    | 1    | -    | -     | 0    | 0    | 
++-------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1226.254 ; gain = 189.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1246.117 ; gain = 209.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1246.883 ; gain = 210.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1253.668 ; gain = 217.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1253.668 ; gain = 217.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1253.668 ; gain = 217.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1253.668 ; gain = 217.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1253.668 ; gain = 217.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1253.668 ; gain = 217.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |ClockingWizard |         1|
+|2     |VideoMemory    |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |ClockingWizard_bbox |     1|
+|2     |VideoMemory_bbox    |     1|
+|3     |DSP48E1             |     1|
+|4     |LUT1                |     2|
+|5     |LUT2                |     3|
+|6     |LUT3                |     4|
+|7     |LUT4                |     6|
+|8     |LUT5                |     7|
+|9     |LUT6                |    10|
+|10    |FDRE                |    20|
+|11    |OBUF                |    14|
+|12    |OBUFT               |    16|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1253.668 ; gain = 217.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1253.668 ; gain = 113.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1253.668 ; gain = 217.137
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1265.734 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1265.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1265.734 ; gain = 229.203
+INFO: [Common 17-1381] The checkpoint 'D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.runs/synth_1/VGAInterface.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file VGAInterface_utilization_synth.rpt -pb VGAInterface_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 15:39:52 2020...

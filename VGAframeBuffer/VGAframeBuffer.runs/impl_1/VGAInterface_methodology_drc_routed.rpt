@@ -1,0 +1,45 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Oct  6 15:41:06 2020
+| Host         : LAPTOP-7KFHSKA6 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file VGAInterface_methodology_drc_routed.rpt -pb VGAInterface_methodology_drc_routed.pb -rpx VGAInterface_methodology_drc_routed.rpx
+| Design       : VGAInterface
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 2
++----------+------------------+------------------------------------------------+------------+
+| Rule     | Severity         | Description                                    | Violations |
++----------+------------------+------------------------------------------------+------------+
+| TIMING-6 | Critical Warning | No common primary clock between related clocks | 2          |
++----------+------------------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks PixelClk_ClockingWizard and PixelClk_ClockingWizard_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks PixelClk_ClockingWizard] -to [get_clocks PixelClk_ClockingWizard_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks PixelClk_ClockingWizard_1 and PixelClk_ClockingWizard are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks PixelClk_ClockingWizard_1] -to [get_clocks PixelClk_ClockingWizard]
+Related violations: <none>
+
+

@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../VGAframeBuffer.srcs/sources_1/ip/ClockingWizard/ClockingWizard_sim_netlist.vhdl" \
+"../../../../VGAframeBuffer.srcs/sources_1/ip/VideoMemory/VideoMemory_sim_netlist.vhdl" \
+"../../../../VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAPackage.vhd" \
+"../../../../VGAframeBuffer.srcs/sources_1/imports/imports/Components.vhd" \
+"../../../../VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd" \
+"../../../../VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGATiming.vhd" \
+"../../../../imports/Components.vhd" \
+"../../../../VGAframeBuffer.srcs/sources_1/new/VGAHorizontalTiming.vhd" \
+"../../../../VGAframeBuffer.srcs/sim_1/imports/opgave1/TB_VGASyncs.vhd" \
+
+# Do not sort compile order
+nosort

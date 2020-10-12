@@ -1,0 +1,87 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Dec 18 17:59:08 2019
+| Host         : LAPTOP-7KFHSKA6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file pongScherm_control_sets_placed.rpt
+| Design       : pongScherm
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    72 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|     14 |            3 |
+|    16+ |           17 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              34 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             184 |           27 |
+| Yes          | No                    | No                     |              68 |           11 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             322 |           47 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+----------------------------+-----------------------------+------------------+----------------+
+|     Clock Signal     |        Enable Signal       |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++----------------------+----------------------------+-----------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG |                            |                             |                1 |              2 |
+|  score/CLK800Hz      |                            |                             |                1 |             14 |
+|  CLK25MHZ_BUFG       | spelers/linkerScore        | restart_IBUF                |                2 |             14 |
+|  CLK25MHZ_BUFG       | spelers/rechterScore       | restart_IBUF                |                2 |             14 |
+|  score/CLK800Hz      | score/binGetal[6]_i_1_n_0  |                             |                2 |             16 |
+|  CLK25MHZ_BUFG       |                            |                             |                7 |             18 |
+|  CLK25MHZ_BUFG       | spelers/vSpelerLinks_1     | restart_IBUF                |                3 |             18 |
+|  CLK25MHZ_BUFG       | spelers/vSpelerRechts_0    | restart_IBUF                |                3 |             18 |
+|  CLK25MHZ_BUFG       | spelers/svBal[8]_i_1_n_0   |                             |                6 |             18 |
+|  CLK25MHZ_BUFG       |                            | verticaal/horizontaal/clear |                5 |             20 |
+|  CLK25MHZ_BUFG       | spelers/shBal[9]_i_2_n_0   | spelers/shBal[9]_i_1_n_0    |                6 |             20 |
+|  CLK25MHZ_BUFG       | verticaal/horizontaal/E[0] | verticaal/horizontaal/SR[0] |                3 |             20 |
+|  CLK25MHZ_BUFG       |                            | geluid/clear                |                4 |             30 |
+|  CLK25MHZ_BUFG       | geluid/tuneTeller          |                             |                3 |             34 |
+|  CLK25MHZ_BUFG       |                            | AIproces/klokteller0        |                6 |             42 |
+|  CLK25MHZ_BUFG       | spelers/klokTeller         | spelers/botsGeluid24_out    |                6 |             42 |
+|  CLK100MHZ_IBUF_BUFG |                            | clear                       |                6 |             44 |
+|  CLK25MHZ_BUFG       |                            | score/clear                 |                6 |             48 |
+|  CLK25MHZ_BUFG       | speelDeun_IBUF             | geluid/tuneTeller           |                6 |             48 |
+|  CLK25MHZ_BUFG       | spelers/slSpelerLengte     | restart_IBUF                |                8 |             64 |
+|  CLK25MHZ_BUFG       | spelers/srSpelerLengte     | restart_IBUF                |                8 |             64 |
++----------------------+----------------------------+-----------------------------+------------------+----------------+
+
+
