@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -91,9 +89,6 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 add_files D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/ip/VideoMemory/FPA.coe
 read_vhdl -library xil_defaultlib {
-  D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/sources_1/imports/new/schermHorizontaal.vhd
-  D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/sources_1/imports/new/schermVerticaal.vhd
-  D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/sources_1/new/pongScherm.vhd
   D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAPackage.vhd
   D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/Components.vhd
   D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.srcs/sources_1/imports/imports/opgave1/VGAInterface.vhd

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Tue Oct  6 15:41:06 2020
+| Date         : Tue Oct 13 14:30:24 2020
 | Host         : LAPTOP-7KFHSKA6 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file VGAInterface_methodology_drc_routed.rpt -pb VGAInterface_methodology_drc_routed.pb -rpx VGAInterface_methodology_drc_routed.rpx
 | Design       : VGAInterface
@@ -23,12 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 2
-+----------+------------------+------------------------------------------------+------------+
-| Rule     | Severity         | Description                                    | Violations |
-+----------+------------------+------------------------------------------------+------------+
-| TIMING-6 | Critical Warning | No common primary clock between related clocks | 2          |
-+----------+------------------+------------------------------------------------+------------+
+             Violations found: 6
++-----------+------------------+------------------------------------------------+------------+
+| Rule      | Severity         | Description                                    | Violations |
++-----------+------------------+------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks | 2          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                   | 1          |
+| TIMING-20 | Warning          | Non-clocked latch                              | 3          |
++-----------+------------------+------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -40,6 +42,26 @@ Related violations: <none>
 TIMING-6#2 Critical Warning
 No common primary clock between related clocks  
 The clocks PixelClk_ClockingWizard_1 and PixelClk_ClockingWizard are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks PixelClk_ClockingWizard_1] -to [get_clocks PixelClk_ClockingWizard]
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell verticalTimings/horizontalTimings/Red_reg[3]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Blue_reg[3]/CLR, Green_reg[3]/CLR, Red_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch Blue_reg[3] cannot be properly analyzed as its control pin Blue_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch Green_reg[3] cannot be properly analyzed as its control pin Green_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch Red_reg[3] cannot be properly analyzed as its control pin Red_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 
