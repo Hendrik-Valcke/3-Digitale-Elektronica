@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_LFSR_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_LFSR" />
+            <top_module name="components" />
+            <top_module name="lfsrpackage" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="357201fs"></ZoomEndTime>
+      <Cursor1Time time="22200fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="135"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/TB_LFSR/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_LFSR/ResetN" type="logic">
+      <obj_property name="ElementShortName">ResetN</obj_property>
+      <obj_property name="ObjectShortName">ResetN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_LFSR/LFSR0/XorSum" type="array">
+      <obj_property name="ElementShortName">XorSum[0:6]</obj_property>
+      <obj_property name="ObjectShortName">XorSum[0:6]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_LFSR/LFSR0/output" type="array">
+      <obj_property name="ElementShortName">output[0:6]</obj_property>
+      <obj_property name="ObjectShortName">output[0:6]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_LFSR/LFSRReg" type="array">
+      <obj_property name="ElementShortName">LFSRReg[1:7]</obj_property>
+      <obj_property name="ObjectShortName">LFSRReg[1:7]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_LFSR/c_Size" type="other">
+      <obj_property name="ElementShortName">c_Size</obj_property>
+      <obj_property name="ObjectShortName">c_Size</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_LFSR/c_Taps" type="array">
+      <obj_property name="ElementShortName">c_Taps[1:7]</obj_property>
+      <obj_property name="ObjectShortName">c_Taps[1:7]</obj_property>
+   </wvobject>
+</wave_config>

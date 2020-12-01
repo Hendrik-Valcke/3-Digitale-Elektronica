@@ -3,5 +3,5 @@ use IEEE.std_logic_1164.all;
 
 package LFSRPackage is
   --type t_TapsArr is array (integer range <>) of boolean;
-  type t_TapsArr is array (1 to 19) of boolean;
+  type t_TapsArr is array (1 to 19) of boolean;--manueel 7,16,19 invullen de '1'ste bit is de msb
 end LFSRPackage;
