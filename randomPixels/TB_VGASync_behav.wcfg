@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_VGASync_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_VGASync" />
+            <top_module name="components" />
+            <top_module name="glbl" />
+            <top_module name="lfsrpackage" />
+            <top_module name="vgapackage" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="95801fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="120"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="41" />
+   <wvobject fp_name="/TB_VGASync/TopLevel/clockmap/Clk100Mhz" type="logic">
+      <obj_property name="ElementShortName">Clk100Mhz</obj_property>
+      <obj_property name="ObjectShortName">Clk100Mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/clockmap/SysClk100MHz" type="logic">
+      <obj_property name="ElementShortName">SysClk100MHz</obj_property>
+      <obj_property name="ObjectShortName">SysClk100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/shiftRegister/LFSR" type="array">
+      <obj_property name="ElementShortName">LFSR[1:19]</obj_property>
+      <obj_property name="ObjectShortName">LFSR[1:19]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/writeMemory/X" type="array">
+      <obj_property name="ElementShortName">X[9:0]</obj_property>
+      <obj_property name="ObjectShortName">X[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/writeMemory/Y" type="array">
+      <obj_property name="ElementShortName">Y[8:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/writeMemory/WEn" type="logic">
+      <obj_property name="ElementShortName">WEn</obj_property>
+      <obj_property name="ObjectShortName">WEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/writeMemory/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/writeMemory/Addr" type="array">
+      <obj_property name="ElementShortName">Addr[18:0]</obj_property>
+      <obj_property name="ObjectShortName">Addr[18:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/shiftRegister/LFSR" type="array">
+      <obj_property name="ElementShortName">LFSR[1:19]</obj_property>
+      <obj_property name="ObjectShortName">LFSR[1:19]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/shiftRegister/seed" type="array">
+      <obj_property name="ElementShortName">seed[1:19]</obj_property>
+      <obj_property name="ObjectShortName">seed[1:19]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/shiftRegister/XorSum" type="array">
+      <obj_property name="ElementShortName">XorSum[1:19]</obj_property>
+      <obj_property name="ObjectShortName">XorSum[1:19]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/TopLevel/shiftRegister/output" type="array">
+      <obj_property name="ElementShortName">output[1:19]</obj_property>
+      <obj_property name="ObjectShortName">output[1:19]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/AutoCheckError" type="array">
+      <obj_property name="ElementShortName">AutoCheckError[1:8]</obj_property>
+      <obj_property name="ObjectShortName">AutoCheckError[1:8]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/HSync" type="logic">
+      <obj_property name="ElementShortName">HSync</obj_property>
+      <obj_property name="ObjectShortName">HSync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/VSync" type="logic">
+      <obj_property name="ElementShortName">VSync</obj_property>
+      <obj_property name="ObjectShortName">VSync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/Red" type="array">
+      <obj_property name="ElementShortName">Red[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Red[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/Green" type="array">
+      <obj_property name="ElementShortName">Green[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Green[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/Blue" type="array">
+      <obj_property name="ElementShortName">Blue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Blue[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/PrevRed" type="array">
+      <obj_property name="ElementShortName">PrevRed[3:0]</obj_property>
+      <obj_property name="ObjectShortName">PrevRed[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/PrevGreen" type="array">
+      <obj_property name="ElementShortName">PrevGreen[3:0]</obj_property>
+      <obj_property name="ObjectShortName">PrevGreen[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/PrevBlue" type="array">
+      <obj_property name="ElementShortName">PrevBlue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">PrevBlue[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/tHighVS" type="other">
+      <obj_property name="ElementShortName">tHighVS</obj_property>
+      <obj_property name="ObjectShortName">tHighVS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/tLowVS" type="other">
+      <obj_property name="ElementShortName">tLowVS</obj_property>
+      <obj_property name="ObjectShortName">tLowVS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/tHighHS" type="other">
+      <obj_property name="ElementShortName">tHighHS</obj_property>
+      <obj_property name="ObjectShortName">tHighHS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/tLowHS" type="other">
+      <obj_property name="ElementShortName">tLowHS</obj_property>
+      <obj_property name="ObjectShortName">tLowHS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/NoVSyncYet" type="other">
+      <obj_property name="ElementShortName">NoVSyncYet</obj_property>
+      <obj_property name="ObjectShortName">NoVSyncYet</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/ResetN" type="logic">
+      <obj_property name="ElementShortName">ResetN</obj_property>
+      <obj_property name="ObjectShortName">ResetN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/Dips" type="array">
+      <obj_property name="ElementShortName">Dips[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Dips[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_HFP" type="other">
+      <obj_property name="ElementShortName">c_HFP</obj_property>
+      <obj_property name="ObjectShortName">c_HFP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_HBP" type="other">
+      <obj_property name="ElementShortName">c_HBP</obj_property>
+      <obj_property name="ObjectShortName">c_HBP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_HPW" type="other">
+      <obj_property name="ElementShortName">c_HPW</obj_property>
+      <obj_property name="ObjectShortName">c_HPW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_HTOT" type="other">
+      <obj_property name="ElementShortName">c_HTOT</obj_property>
+      <obj_property name="ObjectShortName">c_HTOT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_VFP" type="other">
+      <obj_property name="ElementShortName">c_VFP</obj_property>
+      <obj_property name="ObjectShortName">c_VFP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_VBP" type="other">
+      <obj_property name="ElementShortName">c_VBP</obj_property>
+      <obj_property name="ObjectShortName">c_VBP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_VPW" type="other">
+      <obj_property name="ElementShortName">c_VPW</obj_property>
+      <obj_property name="ObjectShortName">c_VPW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_VTOT" type="other">
+      <obj_property name="ElementShortName">c_VTOT</obj_property>
+      <obj_property name="ObjectShortName">c_VTOT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_upperMargin" type="other">
+      <obj_property name="ElementShortName">c_upperMargin</obj_property>
+      <obj_property name="ObjectShortName">c_upperMargin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_lowerMargin" type="other">
+      <obj_property name="ElementShortName">c_lowerMargin</obj_property>
+      <obj_property name="ObjectShortName">c_lowerMargin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_NumAutoChecks" type="other">
+      <obj_property name="ElementShortName">c_NumAutoChecks</obj_property>
+      <obj_property name="ObjectShortName">c_NumAutoChecks</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_VGASync/c_FirstLeds" type="array">
+      <obj_property name="ElementShortName">c_FirstLeds[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c_FirstLeds[15:0]</obj_property>
+   </wvobject>
+</wave_config>

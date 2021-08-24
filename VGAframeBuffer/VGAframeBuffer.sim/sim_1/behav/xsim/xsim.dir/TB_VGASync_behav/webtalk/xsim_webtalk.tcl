@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.sim/sim_1/behav/xsim/xsim.dir/TB_VGASync_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Mon Oct 26 17:36:39 2020" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Tue Nov 17 16:45:37 2020" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2902540" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "6ac6f6af-bd17-4d0d-8798-9a63b40a5747" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "1f43f833b0114abb8877e53db4a551e6" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "6" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "8" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz" -context "user_environment"
@@ -27,7 +27,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "32286437498 ps" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "6" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "412.50_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "30220_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2227071220 -regid "" -xml D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.sim/sim_1/behav/xsim/xsim.dir/TB_VGASync_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.sim/sim_1/behav/xsim/xsim.dir/TB_VGASync_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.sim/sim_1/behav/xsim/xsim.dir/TB_VGASync_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "493.66_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "30192_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1883933908 -regid "" -xml D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.sim/sim_1/behav/xsim/xsim.dir/TB_VGASync_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.sim/sim_1/behav/xsim/xsim.dir/TB_VGASync_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/Data/VHDLprojects2020/VGAframeBuffer/VGAframeBuffer.sim/sim_1/behav/xsim/xsim.dir/TB_VGASync_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

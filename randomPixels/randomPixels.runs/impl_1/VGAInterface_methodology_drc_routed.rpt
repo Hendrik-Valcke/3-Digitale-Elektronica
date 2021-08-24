@@ -1,0 +1,74 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Dec 15 14:31:23 2020
+| Host         : LAPTOP-7KFHSKA6 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file VGAInterface_methodology_drc_routed.rpt -pb VGAInterface_methodology_drc_routed.pb -rpx VGAInterface_methodology_drc_routed.rpx
+| Design       : VGAInterface
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 7
++-----------+------------------+----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                        | Violations |
++-----------+------------------+----------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin          | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                       | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                      | 1          |
+| TIMING-20 | Warning          | Non-clocked latch                                  | 3          |
++-----------+------------------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock clockmap/inst/SysClk100MHz is defined downstream of clock sys_clk_pin and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock clockmap/inst/SysClk100MHz is created on an inappropriate internal pin clockmap/inst/SysClk100MHz. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell verticalTimings/horizontalTimings/Red_reg[3]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Blue_reg[3]/CLR, Green_reg[3]/CLR, Red_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on ResetN relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch Blue_reg[3] cannot be properly analyzed as its control pin Blue_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch Green_reg[3] cannot be properly analyzed as its control pin Green_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch Red_reg[3] cannot be properly analyzed as its control pin Red_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+

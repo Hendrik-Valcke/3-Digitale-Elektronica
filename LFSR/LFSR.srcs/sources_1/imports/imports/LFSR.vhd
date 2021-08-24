@@ -4,6 +4,7 @@ use work.LFSRPackage.all;
 use IEEE.numeric_std.all;
 --elke klokslag schuiven de waardes op naar rechts (richting LSB)
 --'1'ste bit (MSB) krijgt de waarde van de Xor som (default xor(bit6,bit7)), de andere bits krijgen de oude waarde van hun linkerbuur
+--niet vergeten t_TapsArr definitie aan te passen
 
 entity LFSR is
   generic (
@@ -30,6 +31,7 @@ begin
                 for I in 2 to lfsrSize --voor de 2de bit tot de laatste
                 loop
                     output(I) <= output(I-1);--waardes schuiven naar rechts (richting LSB =default bit 7)
+                    --iedere klokslag worden deze waarden aangepast, output(2)<= oude output(1)
                 end loop;                                
             end if;
         else --reset = 0 want actief laag
@@ -37,15 +39,16 @@ begin
         end if;
     end process;
         
-    GenFeedback: for I in (lfsrSize-1)downto 1 generate --vertrekt op voorlaatste bit (default 6) en bewegen naar links over de taps (laatste/7de bit krijgt al waarde)
+    GenFeedback: for I in (lfsrSize-1)downto 1 generate 
+    --vertrekt op voorlaatste bit (default 6) en gaat naar links over de taps (laatste/7de bit krijgt al waarde)
         XorSum(lfsrSize)<= output(lfsrSize);--de meeste rechtse bit vd XorSum krijgt waarde van de meest rechtse bit van het lfsr getal (default bit 7)
         GenXOR: if g_Taps(I) = true generate -- alle volgende linkse bits krijgen waarde van xor met rechtse xorsom-buur indien er een tap is        
             XorSum(I)<= output(I) xor XorSum(I+1);--bv 6de bit in g_taps = 1 dus XorSum(6)=output(6) xor XorSum(7)
-        end generate GenXOR;
+            end generate GenXOR;
         GenNoXOR: 
         if g_Taps(I) = false generate--geen taps, gewoon waarde doorgeven zonder xor 
             XorSum(I)<= XorSum(I+1);
-        end generate GenNoXOR;
+            end generate GenNoXOR;
     end generate GenFeedback;    
         
     endShift:process(output)
