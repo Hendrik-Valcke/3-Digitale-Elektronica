@@ -22,9 +22,9 @@ architecture Behavioral of TB_bresenham is
 
   signal Clk      : std_logic := '0';
   signal ResetN   : std_logic := '1';
-  signal X0       : unsigned (Log2Ceil(c_HRes)-1 downto 0):=to_unsigned(10,Log2Ceil(c_HRes));--deze waarden invullen
-  signal X1       : unsigned (Log2Ceil(c_HRes)-1 downto 0):=to_unsigned(2,Log2Ceil(c_HRes));
-  signal Y0       : unsigned (Log2Ceil(c_VRes)-1 downto 0):=to_unsigned(3,Log2Ceil(c_VRes));
+  signal X0       : unsigned (Log2Ceil(c_HRes)-1 downto 0):=to_unsigned(0,Log2Ceil(c_HRes));--deze waarden invullen
+  signal X1       : unsigned (Log2Ceil(c_HRes)-1 downto 0):=to_unsigned(5,Log2Ceil(c_HRes));
+  signal Y0       : unsigned (Log2Ceil(c_VRes)-1 downto 0):=to_unsigned(0,Log2Ceil(c_VRes));
   signal Y1       : unsigned (Log2Ceil(c_VRes)-1 downto 0):=to_unsigned(5,Log2Ceil(c_VRes));
   signal PlotX       : unsigned (Log2Ceil(c_HRes)-1 downto 0);
   signal Ploty       : unsigned (Log2Ceil(c_VRes)-1 downto 0);

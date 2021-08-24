@@ -175,15 +175,15 @@ Y<=unsigned(random(11 to 19));
     begin
         if(VideoActive)--dus zoek rgb waarde voor adres
         then
-            if(color(2) = '1')
+            if(color(2) = '1')--100
             then
                 Red <= "1111";
             end if;            
-            if(color(1) = '1')
+            if(color(1) = '1')--010
             then
                 Green <= "1111";
             end if;            
-            if(color(0) = '1')
+            if(color(0) = '1')--001
             then
                 Blue <= "1111";
             end if;
